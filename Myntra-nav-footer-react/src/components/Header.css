@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  background-color: whitesmoke;
+  width: 95vw;
+  height: 100px;
+  justify-content: space-between;
+
+  margin: auto;
+}
+
+.left-header-section {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.left-header-section > p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.profile,
+.wishlist,
+.bag > p {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+.left-header-section > p > sup {
+  color: red;
+}
+.right-header-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 50%;
+}
+
+.rightmost-head-section {
+  display: flex;
+  gap: 2rem;
+}
+.search-box {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box > input {
+  padding: 1rem;
+  width: 100%;
+  background-color: whitesmoke;
+  outline: none;
+  border-radius: 10px;
+}
