@@ -1,0 +1,26 @@
+.card {
+  background-color: #fff;
+  width: fit-content;
+  margin-top: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-evenly;
+
+  flex-wrap: wrap;
+  width: auto; /* Adjust as needed */
+}
+
+.item > div {
+  width: calc(50% - 10px); /* Two items per row with 10px gap between them */
+  margin-bottom: 20px; /* Vertical margin between rows */
+}
+
+.card img {
+  width: 80%; /* Ensure images fill their container */
+  height: auto; /* Maintain aspect ratio */
+}

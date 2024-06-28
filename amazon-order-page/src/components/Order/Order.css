@@ -1,0 +1,229 @@
+/* Body styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.amazon-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #232f3e;
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header link styles */
+.amazon-header .header-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+.amazon-header .header-link img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Search bar styles */
+.amazon-header .search-bar {
+  width: 60%;
+  padding: 10px 15px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ddd; /* Add a subtle border */
+  font-size: 16px;
+}
+
+/* Search button styles */
+.amazon-header .search-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #febd69;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amazon-header .search-button img {
+  height: 20px;
+}
+
+/* Cart link styles */
+.amazon-header .cart-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.amazon-header .cart-icon {
+  height: 30px;
+}
+
+.amazon-header .cart-quantity {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #f08804;
+  border-radius: 50%;
+  padding: 2px 8px;
+  font-size: 12px;
+  color: white;
+}
+
+.amazon-header .cart-text {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+/* Main content styles */
+.main {
+  padding: 40px;
+  background-color: #fff;
+}
+
+/* Page title styles */
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #232f3e;
+  text-align: center;
+}
+
+/* Orders grid styles */
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive grid layout */
+  gap: 20px;
+}
+
+/* Order container styles */
+.order-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Order header styles */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center vertically */
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/* Order header sections */
+.order-header-left-section,
+.order-header-right-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Order header label styles */
+.order-header-label {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Order details grid styles */
+.order-details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center; /* Align items vertically centered */
+}
+
+/* Product image container styles */
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image-container img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.product-image-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Product details styles */
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px; /* Add a small gap between text elements */
+}
+
+/* Product name styles */
+.product-name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px; /* Reduce bottom margin */
+}
+
+/* Product details text styles */
+.product-delivery-date,
+.product-quantity {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Button styles */
+.buy-again-button,
+.track-package-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px; /* Consistent padding for both buttons */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-again-button {
+  background-color: #febd69;
+  color: #333; /* Use a darker color for better contrast */
+}
+
+.buy-again-button img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.buy-again-button:hover {
+  background-color: #ffa742;
+}
+
+.track-package-button {
+  background-color: #232f3e;
+  color: white;
+}
+
+.track-package-button:hover {
+  background-color: #1e293b;
+}
+
+/* Remove hover opacity reduction for buttons */
+.button-primary:hover,
+.button-secondary:hover {
+  opacity: 1; /* No opacity change on hover */
+}
